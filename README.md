@@ -1,6 +1,7 @@
 # minesweeper
 command line minesweeper built with python as an excersice. 
 
+![alt text](https://github.com/zdalih/minesweeper/images/0001.png)
 
 
 ## CURENTLY INCOMPLETE
