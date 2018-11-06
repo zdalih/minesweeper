@@ -1,6 +1,18 @@
 # minesweeper
 command line minesweeper built with python as an excersice. 
 
+
+
+## CURENTLY INCOMPLETE
+
+TODO
+
+* Flags are shown as B - the same as bombs
+* No user assistance
+* No loosing of winning message
+* No stats
+* Inputs require pressing enter everytime
+
 ## Usage
 
 ```bash
