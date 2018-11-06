@@ -166,4 +166,7 @@ class minesweeper(object):
 		except IndexError:
 			return
 
+		if i == -1 or j == -1:
+			return
+
 		self.cursor = (i,j)
