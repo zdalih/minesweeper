@@ -1,8 +1,13 @@
 # minesweeper
 command line minesweeper built with python as an excersice. 
 
+A 10x10 board example.
+
 ![alt text](https://github.com/zdalih/minesweeper/blob/master/images/0001.png)
 
+A completed 20x20 board:
+
+![alt text](https://github.com/zdalih/minesweeper/blob/master/images/0002.png)
 
 ## CURENTLY INCOMPLETE
 
