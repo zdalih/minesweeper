@@ -51,36 +51,6 @@ class minesweeper(object):
 		rowDivider = ''.join(['\n\033[93m', ''.join(['-']*(len(rows[0])-5)), '\n'])
 		return rowDivider.join(rows)
 
-	def printFullBoard(self):
-
-		rows = []
-
-		row = ['\033[92m| ']
-		for i in range(self.width):
-			row.append(' '  + chr(97 + i) + ' ')
-
-		rows.append('|'.join(row))
-
-		for j in range(self.height):
-			row = ['\033[92m']
-			row.append(str(j))
-			for i in range(self.width):
-				if self.privateBoard[i][j] is None:
-					cell = '\033[91m '
-				elif self.privateBoard[i][j] == -2:
-					cell = '\033[93mF'
-				elif self.privateBoard[i][j] >= 0 :
-					cell = '\033[94m' + str(self.privateBoard[i][j])
-				elif self.privateBoard[i][j] == -1:
-					cell = '\033[91mB'
-				row.append(' ' + cell + ' ')
-
-			rows.append('\033[92m|'.join(row))
-
-		rowDivider = ''.join(['\n\033[92m', ''.join(['-']*(len(rows[0])-5)), '\n'])
-		return rowDivider.join(rows)
-
-
 	def placeBombs(self):
 		bombIndices = random.sample(range(1,self.height*self.width), self.numBombs)
 		
